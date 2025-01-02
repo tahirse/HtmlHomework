@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>POLO</title>
+    <style>
+        table, th, td {
+          border: 1px solid rgb(94, 96, 103);
+        }
+        table {
+          border-spacing: 30px;
+        }
+        </style>
+   <style>
+        
+        .mySlides {
+            width: 100%;
+            height: 400px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <main>
+            <nav>
+                <div class="phone-number">
+                    <a href="./index.html">
+                        <span>Phone Number +1(234) 550880</span>
+                    </a>
+                    <a href="./index.html">
+                        <span>Email: concat@info.com</span>
+                    </a>
+                    
+                </div>
+              
+                
+                <!-- Navigations  Section start-->
+                
+                    <div class="social-icons social-icons-colored-hover">
+        
+                        <ul>
+                            <li><a href="./index.html">
+                                <span><i class="fab fa-facebook-f"></i></a></li></span>
+                                <li><a href="./index.html">
+                                    <span><i class="fab fa-twitter"></i></a></li></span>
+                            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href=""><i class="fab fa-vimeo"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                 
+                    </div>
+                    <div id="logo"> 
+                        <a href="index.html">
+                            <span class="logo">POLO</span>
+                        </a> 
+                    <a href="#" class="w3-bar-item w3-button">Home</a>
+                    <a href="#" class="w3-bar-item w3-button">LAYOUT</a>
+                    <a href="#" class="w3-bar-item w3-button">FEATURES</a>
+                    <a href="#" class="w3-bar-item w3-button">ELEMENTS</a>
+                    <a href="#" class="w3-bar-item w3-button">PAGES</a>
+                    <a href="#" class="w3-bar-item w3-button">PORTFOLIO</a>
+                    <a href="#" class="w3-bar-item w3-button">BLOG</a>
+                    <a href="#" class="w3-bar-item w3-button">SHOP</a>
+                    <a href="#" class="w3-bar-item w3-button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa-solid fa-globe"></i></a>
+                  </div>
+                  
+                  <!-- Navigations  Section End-->
+                   
+                <!-- Slide show Section Start -->
+           
+                <div class="Slide-show" style="max-width:100%">
+                    <img class="mySlides w3-animate-top" src="./img/photo-1544473243-e8b609021dbf (1).avif" alt="Image 1">
+                    <img class="mySlides w3-animate-top" src="./img/photo-1602217401979-6f7209f5289d.avif" alt="Image 2">
+                    <img class="mySlides w3-animate-bottom" src="./img/photo-1729606187877-7820c7f51df8.avif" alt="Image 3">
+                    <img class="mySlides w3-animate-bottom" src="./img/photo-1729606187893-e99885e03d11.avif" alt="Image 4">
+                    <img class="mySlides w3-animate-bottom" src="./img/photo-1729606187893-e99885e03d11.avif" alt="Image 4">
+                </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2500);    
+                    }
+                </script>
+                <!-- Slide show Section End -->
+                <table style="width:100px">
+                    <tr>
+                     
+                      <th>
+                        <form action="/action_page.php">
+                        <label for="Chech-Inn"></label>
+                        <input type="date" id="Chech-Inn" name="Chech-Inn">
+                      
+                      </form></th>
+                      
+                       <th>
+                        <form action="/action_page.php">
+                        <label for="Chech-Inn"></label>
+                        <input type="date" id="Chech-Inn" name="Chech-Inn">
+                      
+                      </form></th>
+                      
+                     
+                    </tr>
+                    <tr>
+                      <td>
+                      <form action="/action_page.php">
+                       <label for="quantity">Adults :</label>
+                       <input type="number" id="adults" name="adults" min="1" max="25"><br><br>
+                      
+                    </form></td>
+                      <td><form action="/action_page.php">
+                       <label for="quantity">Child :</label>
+                       <input type="number" id="Child" name="Child" min="1" max="25"><br><br></td>
+                     
+                    </tr>
+                    <tr>
+                      <td>
+                      <form action="/action_page.php">
+                   <select id="rooms" name="rooms">
+                      <option value="">Select room type</option>
+    <option value="">Single Room</option>
+    <option value="">Double Room</option>
+    <option value="">King  double Room</option>
+  </select>
+ 
+</form>
+               <input type="submit">        
+                     </td>
+                    </tr>
+                  </table>
+             
+
+            </nav>
+        </main>
+    </header>
+</body>
+</html>
